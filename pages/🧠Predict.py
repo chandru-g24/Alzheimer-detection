@@ -27,11 +27,11 @@ with st.sidebar:
 
 @st.cache_resource(show_spinner="Loading..", experimental_allow_widgets=True)
 def model_():
-        json_file = open('model.json', 'r')
+        json_file = open('pages/model.json', 'r')
         loaded_model_json = json_file.read()
         json_file.close()
         classifier = model_from_json(loaded_model_json)
-        classifier.load_weights("model_weights.h5")
+        classifier.load_weights("pages/model_weights.h5")
         return classifier
 
 model = model_()
