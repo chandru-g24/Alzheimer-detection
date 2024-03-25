@@ -1,1 +1,1 @@
-# Alzheimer-detection
+# Demintia-detection : https://mindheal.streamlit.app
